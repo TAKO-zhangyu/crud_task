@@ -13,11 +13,6 @@ class UsersController < ApplicationController
     redirect_to action: :index
   end
 
-  #詳細情報を表示するためのアクション
-  def show
-    @user = User.find(params[:id])
-  end
-
   def edit
     @user = User.find(params[:id])
   end
